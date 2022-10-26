@@ -14,7 +14,6 @@ N이 주어졌을 때, N의 사이클의 길이를 구하는 프로그램을 작
 """
 
 n = int(input())
-num = n
 cnt = 0
 a , b = divmod(n, 10)
 
@@ -22,7 +21,7 @@ while True:
     plus = a+b
     new_num = (b*10) + (plus%10)
     cnt += 1
-    if new_num == num:
+    if new_num == n:
         break
     else:
         a, b = divmod(new_num, 10)
