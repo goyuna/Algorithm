@@ -38,7 +38,7 @@ dy = [0, 0, -1, 1]
 def bfs(x, y):
     # 큐(Queue) 구현을 위해 deque 라이브러리 사용
     queue = deque()
-    queue.append(x, y)
+    queue.append((x, y))
     # 큐가 빌 떄까지 반복
     while queue:
         x, y = queue.popleft()
