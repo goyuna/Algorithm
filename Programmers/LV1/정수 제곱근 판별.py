@@ -1,5 +1,5 @@
 #
-from math import sqrt   #sqrt : 
+from math import sqrt   #sqrt : 제곱근
 
 def solution(n):
     if sqrt(n) % 1 == 0:
