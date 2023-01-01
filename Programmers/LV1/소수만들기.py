@@ -27,7 +27,7 @@ def solution(nums):
     answer = 0
     for a in cb(nums, 3):
         cand = sum(a)
-        for j in range(2, cand):
+        for j in range(2, cand):    # for-else문 사용
             if cand%j==0:
                 break
         else:
