@@ -1,12 +1,12 @@
-dice = list(map(int, input().split()))
+a, b, c = map(int, input().split())
 
-if dice[0] == dice[1] and dice[0]==dice[2]:
-    print(10000+(dice[0]*1000))
-elif dice[0] == dice[1] and dice[0]!=dice[2]:
-    print(1000+(dice[0]*100))
-elif dice[0]==dice[2] and dice[0]!=dice[1]:
-    print(1000+(dice[0]*100))
-elif dice[1]==dice[2] and dice[0]!=dice[1]:
-    print(1000+(dice[1]*100))
+if a == b == c:
+    print(10000+a*1000)
+elif a == b:
+    print(1000+a*100)
+elif a == c:
+    print(1000+a*100)
+elif b == c:
+    print(1000+b*100)
 else:
-    print(max(dice)*100)
+    print(100 * max(a,b,c))
